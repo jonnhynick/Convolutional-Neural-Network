@@ -29,8 +29,7 @@ if K.image_data_format() == 'channels_first':
 else:
     input_shape = (img_width, img_height, 3)
 
-# ADD CONVOLUTIONAL NEURAL NETWORK MODEL HERE
-# YOUR CODE GOES HERE
+#CONVOLUTIONAL NEURAL NETWORK MODEL HERE
 model = Sequential()
 model.add(Conv2D(32, (3, 3), input_shape=input_shape))
 model.add(Activation('relu'))
